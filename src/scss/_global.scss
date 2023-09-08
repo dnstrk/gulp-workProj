@@ -1,25 +1,44 @@
 // Container
 .container {
-    max-width: ($containerWidth + $containerPadding) + px;
-    width: 100%;
+    max-width: 1240px;
     margin: 0 auto;
-    padding: 0 $containerSidePadding + px;
+    
+    // max-width: ($containerWidth + $containerPadding) + px;
+    // width: 100%;
+    // margin: 0 auto;
+    // padding: 0 $containerSidePadding + px;
 
-    @media (max-width: $breakpoint1450) {
-        max-width: 1200px;
-    }
+    // @media (max-width: $breakpoint1450) {
+    //     max-width: 1200px;
+    // }
 
-    @media (max-width: $breakpoint992) {
-        max-width: 970px;
-    }
+    // @media (max-width: $breakpoint992) {
+    //     max-width: 970px;
+    // }
 
-    @media (max-width: $breakpoint768) {
-        max-width: 740px;
-    }
+    // @media (max-width: $breakpoint768) {
+    //     max-width: 740px;
+    // }
 
-    @media (max-width: $breakpoint480) {
-        max-width: none;
-    }
+    // @media (max-width: $breakpoint480) {
+    //     max-width: none;
+    // }
+}
+
+:root {
+    --primary-black: #000;
+    --primary-white: #fff;
+
+    --Primary-01: #0d1f33;
+    --Primary-03: #f1f6fa;
+    --Primary-04: #687684;
+
+    --Secondary-01: #DAE7FD;
+    --Secondary-07: #a9b3be;
+    --Secondary-08: #e0ecf7;
+
+    --Accent: #c9252c;
+    --Accent-hover: #eb2f37;
 }
 
 // Body Locked
@@ -40,3 +59,4 @@ body {
         opacity: 1;
     }
 }
+

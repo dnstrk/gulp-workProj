@@ -21,17 +21,20 @@ section {
 }
 
 body {
-    line-height: 1;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    // line-height: 1;
+    // -ms-text-size-adjust: 100%;
+    // -moz-text-size-adjust: 100%;
+    // -webkit-text-size-adjust: 100%;
 }
+
+input {outline:none;}
 
 input::-ms-clear {
     display: none;
 }
 
 button {
+    background-color: transparent;
     cursor: pointer;
 }
 

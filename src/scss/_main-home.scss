@@ -1,0 +1,316 @@
+
+
+.main {
+    position: relative;
+    height: 100%;
+    margin-left: 260px;
+    background-color: var(--Primary-03);
+}
+
+/* MAIN HOME */
+
+.main-home-wrap {
+    padding: 46px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+    /* WRAP-INFO */
+
+.main-home-wrap__info {
+    display: flex;
+    width: 100%;
+    padding: 16px 80px;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 30px;
+    position: relative;
+
+    border-radius: 30px;
+    background: var(--Secondary-02, #d1ede1);
+
+    transition: 0.5s;
+}
+
+.main-home-wrap__info.closed {
+    display: none;
+}
+
+.info__arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.info__arrow_prev {
+    background-color: transparent;
+    background-image: url(../../img/main/info/btn-pre.svg);
+}
+.info__arrow_next {
+    background-color: transparent;
+    background-image: url(../../img/main/info/btn-next.svg);
+}
+
+.info__text {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 30px;
+    text-align: center;
+
+    color: var(--Primary-01);
+    font-family: "RF Dewi regular";
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.info__open {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 16px;
+    opacity: 0;
+
+    background-image: url(../../img/main/info/Open.svg);
+}
+
+.info__open.active {
+    opacity: 0.3;
+}
+
+.info__close {
+    background-color: transparent;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    right: 20px;
+    top: 16px;
+    background-image: url(../../img/main/info/Close.svg);
+}
+
+/* WRAP-TITLEBTN */
+
+.main-home-wrap__titleBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titleBtn__title {
+    color: var(--Primary-01);
+
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.titleBtn__btn {
+    padding: 0 25px;
+
+    border-radius: 27.5px;
+    border: 2px solid rgba(201, 37, 44, 0.25);
+
+    font-family: "RF Dewi regular";
+    color: var(--Accent);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    transition: color 0.5s linear, background 0.5s linear,
+        transform 0.01s linear;
+}
+
+.titleBtn__btn:hover {
+    color: var(--Primary-03);
+    background-color: #c9252c;
+}
+
+.titleBtn__btn:active {
+    transform: scale(97%);
+}
+
+/* CARDS */
+
+/* PRIMARY */
+.primary-cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    width: 100%;
+    gap: 20px;
+}
+/* END PRIMARY */
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 30px;
+
+    border-radius: 40px;
+    background-color: var(--primary-white);
+}
+
+/* CARD-CONTENT */
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+/* CONTENT-TIME */
+
+.card-content__time {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.time__day-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    padding: 10px 15px;
+
+    border-radius: 15px;
+    background: var(--Secondary-08);
+}
+
+.day-wrap__day,
+.day-wrap__name {
+    color: var(--Primary-01);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.time__hour {
+    color: var(--Accent);
+    text-align: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* CONTENT-INFO */
+
+.card-content__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* TOP */
+
+.info-top {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.info__vacancy {
+    font-family: "RF Dewi bold";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.info__price-value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px 2px 10px;
+
+    border-radius: 30px;
+    background: rgba(201, 37, 44, 0.05);
+}
+
+.price-value__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.price-value__text {
+    color: var(--Accent);
+
+    font-family: "RF Dewi bold";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.info-bottom__text {
+    color: var(--Primary-04);
+
+    font-family: "RF Dewi regular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.info-bottom__text_dark {
+    color: var(--Primary-01);
+
+    font-family: "RF Dewi regular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* CARD-FOOTER */
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.card-footer__button {
+    padding: 8px 30px;
+
+    border-radius: 40px;
+    border: var(--Accent) 1px solid;
+    background-color: var(--Accent);
+
+    color: var(--primary-white);
+
+    font-family: "RF Dewi regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    transition: color 0.2s linear, background-color 0.2s linear,
+        transform 0.01s linear;
+}
+
+.card-footer__button:hover {
+    color: var(--Accent);
+    background-color: transparent;
+}
+
+.card-footer__button:active {
+    transform: scale(97%);
+}

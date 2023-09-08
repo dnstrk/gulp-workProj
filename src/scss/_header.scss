@@ -1,1 +1,100 @@
 // Header
+header {
+    &.header {
+    position: fixed;
+
+    }
+    .side-nav {
+        display: flex;
+
+        width: 260px;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding: 40px 0px 60px 0px;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 40px;
+    }
+
+    /* PROFILE */
+
+    .side-nav__profile {
+        display: flex;
+        padding: 5px 40px;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .profile__avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    // .avatar__img {
+    // }
+
+    .profile__name {
+        color: var(--Primary-01);
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    /* SIDE-NAV__MENU */
+
+    .side-nav__menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__title {
+        display: flex;
+        padding: 15px 40px;
+
+        color: var(--Secondary-07);
+        font-family: "RF Dewi bold";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .item__link {
+        display: flex;
+        padding: 15px 40px;
+        flex-direction: row;
+        gap: 15px;
+
+        transition: 0.3s;
+    }
+
+    .item__link:hover {
+        background-color: var(--Primary-03);
+    }
+
+    .item__link:active {
+        background-color: #a08f8f;
+    }
+
+    .link__img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .link__text {
+        color: var(--Primary-01);
+
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+}
+

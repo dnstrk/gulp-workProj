@@ -1,4 +1,18 @@
+// @font-face {
+//     font-family: '';
+//     src: url('') format('');
+// }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 @font-face {
-    font-family: '';
-    src: url('') format('');
+    font-family: "RF Dewi bold";
+    src: url("../fonts/RFDewi-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "RF Dewi regular";
+    src: url("../fonts/RFDewi-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }

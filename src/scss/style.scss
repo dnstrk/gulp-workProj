@@ -2,9 +2,13 @@
 @import "./vars";
 @import "./reset";
 @import "./global";
+@import "./fonts";
+
 
 // Sections or Pages SCSS-files imports
-// @import "./header";
+@import "./header";
+@import "./main-home";
+@import "./main-search"
 // @import './footer';
 
 // Libs
