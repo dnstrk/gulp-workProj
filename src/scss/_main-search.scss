@@ -297,18 +297,9 @@
 }
 
 .dateTime-list__text {
+    cursor: pointer;
     display: none;
-}
 
-.dateTime-list__text.open {
-    display: flex;
-}
-
-
-
-
-
-.dateTime-list__text {
     color: var(--Primary-01);
 
     font-family: 'RF Dewi regular';
@@ -316,7 +307,24 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+
+    transition: .15s;
 }
+
+
+.dateTime-list__text.open {
+    display: flex;
+}
+
+.dateTime-list__text.open:hover {
+    color: var(--Accent);
+}
+
+.dateTime-list__text.open:active {
+    transform: scale(98%);
+}
+
+
 
 
 .filter-dateTime__btns {
@@ -484,6 +492,73 @@
     height: 20px;
     background: url(../img/main-search/arrowDown.svg);
 }
+
+.spec-menu__btn.active {
+    transform: rotate(180deg);
+}
+
+.spec-menu__spec-list {
+    position: absolute;
+    display: hidden;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 25px;
+    
+    opacity: 0;
+
+
+    width: 100%;
+    left: 0;
+    top: 110%;
+
+    z-index: 1;
+
+    border-radius: 15px;
+    border: 1px solid var(--Secondary-08);
+    background: var(--primary-white);
+
+
+
+    transition: .3s;
+}
+
+.spec-menu__spec-list.open {
+    display: flex;
+    padding: 25px 15px 25px 25px;
+
+    opacity: 1;
+}
+
+.spec-list__text {
+    cursor: pointer;
+    display: none;
+
+    color: var(--Primary-01);
+
+    font-family: 'RF Dewi regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    transition: .15s;
+}
+
+
+.spec-list__text.open {
+    display: flex;
+}
+
+.spec-list__text.open:hover {
+    color: var(--Accent);
+}
+
+.spec-list__text.open:active {
+    transform: scale(98%);
+}
+
+
+
 
 /* !!!RESET  */
 

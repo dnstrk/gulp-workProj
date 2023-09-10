@@ -943,7 +943,17 @@ header .link__text {
 }
 
 .dateTime-list__text {
+  cursor: pointer;
   display: none;
+  color: var(--Primary-01);
+  font-family: "RF Dewi regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
 }
 
 .dateTime-list__text.open {
@@ -952,13 +962,14 @@ header .link__text {
   display: flex;
 }
 
-.dateTime-list__text {
-  color: var(--Primary-01);
-  font-family: "RF Dewi regular";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
+.dateTime-list__text.open:hover {
+  color: var(--Accent);
+}
+
+.dateTime-list__text.open:active {
+  -webkit-transform: scale(98%);
+      -ms-transform: scale(98%);
+          transform: scale(98%);
 }
 
 .filter-dateTime__btns {
@@ -1167,6 +1178,72 @@ header .link__text {
   width: 20px;
   height: 20px;
   background: url(../img/main-search/arrowDown.svg);
+}
+
+.spec-menu__btn.active {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.spec-menu__spec-list {
+  position: absolute;
+  display: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding-left: 25px;
+  opacity: 0;
+  width: 100%;
+  left: 0;
+  top: 110%;
+  z-index: 1;
+  border-radius: 15px;
+  border: 1px solid var(--Secondary-08);
+  background: var(--primary-white);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.spec-menu__spec-list.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 15px 25px 25px;
+  opacity: 1;
+}
+
+.spec-list__text {
+  cursor: pointer;
+  display: none;
+  color: var(--Primary-01);
+  font-family: "RF Dewi regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.spec-list__text.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spec-list__text.open:hover {
+  color: var(--Accent);
+}
+
+.spec-list__text.open:active {
+  -webkit-transform: scale(98%);
+      -ms-transform: scale(98%);
+          transform: scale(98%);
 }
 
 /* !!!RESET  */
