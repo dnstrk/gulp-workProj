@@ -1,4 +1,4 @@
 // Custom Scripts
 @@include("main.js")
-@@include("home_info-checked.js")
-@@include("search_search-date.js")
+@@include("home-script.js")
+@@include("search-script.js")
