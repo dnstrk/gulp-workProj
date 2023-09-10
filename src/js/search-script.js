@@ -12,7 +12,11 @@ function handlerDate() {
 }
 
 if (dateTimeButton && dateTimeList && dateTimeListItem) {
+    // if (dateTimeList.classList.contains('open')) {
+    //     window.addEventListener('click', handlerDate)
+    // }
     dateTimeButton.addEventListener('click', handlerDate)
+    
 }
 
 // handler Spec
