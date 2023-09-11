@@ -259,6 +259,7 @@ header .link__text {
 
 .main {
   position: relative;
+  min-height: 100vh;
   height: 100%;
   margin-left: 260px;
   background-color: var(--Primary-03);
