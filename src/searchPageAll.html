@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Index</title>
+        <link rel="stylesheet" href="./css/style.min.css" />
+    </head>
+
+    <body class="main__body">
+        <!-- Header -->
+        @@include('./html/_header.html')
+
+        <!-- Main Page -->
+        <main>
+            <div class="main" onclick="handlerFields ()">
+                <div class="main-search-wrap container">
+                    <div class="main-search-wrap__title">
+                        <h3 class="main-search-wrap__title-text mainPage__title">Записаться</h3>
+                    </div>
+                    <div class="main-search-wrap__tabs">
+                        <a class="tabs__orders-btn active title__btns" href="searchPageAll.html">Все заказы</a>
+                        <a class="tabs__education-btn title__btns" href="searchPageLearn.html">Обучение</a>
+                    </div>
+                    <div class="main-search-wrap__searchbar">
+                        <input
+                            class="searchbar__input"
+                            type="text"
+                            placeholder="Поиск по вакансиям"
+                        />
+                        <button class="searchbar__btn">Найти</button>
+                    </div>
+                    <div class="main-search-wrap__search-content">
+                        <div class="search-content__items">
+                            <div class="items__map">
+                                <input
+                                    class="map__input"
+                                    type="text"
+                                    name=""
+                                    id=""
+                                    placeholder="Найти заказы на карте"
+                                />
+                            </div>
+                            <div class="items_cards primary-cards">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="card-content__time">
+                                            <div class="time__day-wrap">
+                                                <span class="day-wrap__day"
+                                                    >23.09</span
+                                                >
+                                                <span class="day-wrap__name"
+                                                    >Понедельник</span
+                                                >
+                                            </div>
+                                            <span class="time__hour"
+                                                >22:00 – 06:00 (8ч)</span
+                                            >
+                                        </div>
+                                        <div class="card-content__info">
+                                            <div class="info-top">
+                                                <span class="info__vacancy"
+                                                    >Грузчик</span
+                                                >
+                                                <div class="info__price-value">
+                                                    <img
+                                                        class="price-value__icon"
+                                                        src="../../img/main/cards/price-value_icon.svg"
+                                                        alt="price-value"
+                                                    />
+                                                    <span
+                                                        class="price-value__text"
+                                                        >160 ₽/час</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="info-bottom">
+                                                <p class="info-bottom__text">
+                                                    <span
+                                                        class="info-bottom__text_dark"
+                                                        >АШАН,</span
+                                                    >
+                                                    ТЦ Город, Рязанский проспект
+                                                    ~20 мин от вас
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="card-footer__button">
+                                            Записаться
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="card-content__time">
+                                            <div class="time__day-wrap">
+                                                <span class="day-wrap__day"
+                                                    >23.09</span
+                                                >
+                                                <span class="day-wrap__name"
+                                                    >Понедельник</span
+                                                >
+                                            </div>
+                                            <span class="time__hour"
+                                                >22:00 – 06:00 (8ч)</span
+                                            >
+                                        </div>
+                                        <div class="card-content__info">
+                                            <div class="info-top">
+                                                <span class="info__vacancy"
+                                                    >Грузчик</span
+                                                >
+                                                <div class="info__price-value">
+                                                    <img
+                                                        class="price-value__icon"
+                                                        src="../../img/main/cards/price-value_icon.svg"
+                                                        alt="price-value"
+                                                    />
+                                                    <span
+                                                        class="price-value__text"
+                                                        >160 ₽/час</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="info-bottom">
+                                                <p class="info-bottom__text">
+                                                    <span
+                                                        class="info-bottom__text_dark"
+                                                        >АШАН,</span
+                                                    >
+                                                    ТЦ Город, Рязанский проспект
+                                                    ~20 мин от вас
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="card-footer__button">
+                                            Записаться
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="card-content__time">
+                                            <div class="time__day-wrap">
+                                                <span class="day-wrap__day"
+                                                    >23.09</span
+                                                >
+                                                <span class="day-wrap__name"
+                                                    >Понедельник</span
+                                                >
+                                            </div>
+                                            <span class="time__hour"
+                                                >22:00 – 06:00 (8ч)</span
+                                            >
+                                        </div>
+                                        <div class="card-content__info">
+                                            <div class="info-top">
+                                                <span class="info__vacancy"
+                                                    >Грузчик</span
+                                                >
+                                                <div class="info__price-value">
+                                                    <img
+                                                        class="price-value__icon"
+                                                        src="../../img/main/cards/price-value_icon.svg"
+                                                        alt="price-value"
+                                                    />
+                                                    <span
+                                                        class="price-value__text"
+                                                        >160 ₽/час</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="info-bottom">
+                                                <p class="info-bottom__text">
+                                                    <span
+                                                        class="info-bottom__text_dark"
+                                                        >АШАН,</span
+                                                    >
+                                                    ТЦ Город, Рязанский проспект
+                                                    ~20 мин от вас
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="card-footer__button">
+                                            Записаться
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="card-content__time">
+                                            <div class="time__day-wrap">
+                                                <span class="day-wrap__day"
+                                                    >23.09</span
+                                                >
+                                                <span class="day-wrap__name"
+                                                    >Понедельник</span
+                                                >
+                                            </div>
+                                            <span class="time__hour"
+                                                >22:00 – 06:00 (8ч)</span
+                                            >
+                                        </div>
+                                        <div class="card-content__info">
+                                            <div class="info-top">
+                                                <span class="info__vacancy"
+                                                    >Грузчик</span
+                                                >
+                                                <div class="info__price-value">
+                                                    <img
+                                                        class="price-value__icon"
+                                                        src="../../img/main/cards/price-value_icon.svg"
+                                                        alt="price-value"
+                                                    />
+                                                    <span
+                                                        class="price-value__text"
+                                                        >160 ₽/час</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="info-bottom">
+                                                <p class="info-bottom__text">
+                                                    <span
+                                                        class="info-bottom__text_dark"
+                                                        >АШАН,</span
+                                                    >
+                                                    ТЦ Город, Рязанский проспект
+                                                    ~20 мин от вас
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="card-footer__button">
+                                            Записаться
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-content__filter">
+                            <div class="filter-dateTime">
+                                <h5
+                                    class="filter-dateTime__title primary-filter-title"
+                                >
+                                    Дата и время
+                                </h5>
+                                <div class="filter-dateTime__dateTime-menu">
+                                    <!--after-->
+                                    <input
+                                        class="dateTime-menu__input"
+                                        type="text"
+                                        placeholder="Дата"
+                                    />
+                                    <button class="dateTime-menu__btn"></button>
+                                    <div class="dateTime-menu__dateTime-list">
+                                        <span
+                                            class="dateTime-list__text"
+                                            onclick="date_1 ()"
+                                            id="date1"
+                                            >24 сен Понедельник</span
+                                        >
+                                        <span
+                                            class="dateTime-list__text"
+                                            onclick="date_2 ()"
+                                            id="date2"
+                                            >25 сен Вторник</span
+                                        >
+                                        <span
+                                            class="dateTime-list__text"
+                                            onclick="date_3 ()"
+                                            id="date3"
+                                            >26 сен Среда</span
+                                        >
+                                        <span
+                                            class="dateTime-list__text"
+                                            onclick="date_4 ()"
+                                            id="date4"
+                                            >27 сен Четверг</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="filter-dateTime__btns">
+                                    <button class="btns__btnDay">
+                                        06:00 — 19:59
+                                    </button>
+                                    <button class="btns__btnNight">
+                                        20:00 — 05:59
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="filter-area">
+                                <h5 class="filter-area primary-filter-title">
+                                    Район города
+                                </h5>
+                                <div class="filter-area__areas">
+                                    <div class="area-item">
+                                        <input
+                                            class="area-item__checkbox"
+                                            type="checkbox"
+                                            checked
+                                        />
+                                        <span class="area-item__name"
+                                            >Марьино</span
+                                        >
+                                    </div>
+                                    <div class="area-item">
+                                        <input
+                                            class="area-item__checkbox"
+                                            type="checkbox"
+                                            checked
+                                        />
+                                        <span class="area-item__name"
+                                            >Выхино-Жулебино</span
+                                        >
+                                    </div>
+                                    <div class="area-item">
+                                        <input
+                                            class="area-item__checkbox"
+                                            type="checkbox"
+                                        />
+                                        <span class="area-item__name"
+                                            >Митино</span
+                                        >
+                                    </div>
+                                    <div class="area-item">
+                                        <input
+                                            class="area-item__checkbox"
+                                            type="checkbox"
+                                        />
+                                        <span class="area-item__name"
+                                            >Отрадное</span
+                                        >
+                                    </div>
+                                </div>
+                                <button
+                                    class="filter-area__show-areas primary-show"
+                                >
+                                    Показать все
+                                </button>
+                            </div>
+                            <div class="filter-subway">
+                                <h5
+                                    class="filter-subway__title primary-filter-title"
+                                >
+                                    Метро
+                                </h5>
+                                <span class="filter-subway__selected"
+                                    >Любое</span
+                                >
+                                <button
+                                    class="filter-subway__show-subways primary-show"
+                                >
+                                    Выбрать метро
+                                </button>
+                            </div>
+                            <div class="filter-spec">
+                                <h5
+                                    class="filter-spec__title primary-filter-title"
+                                >
+                                    Специализация
+                                </h5>
+                                <div class="filter-spec__spec-menu">
+                                    <!--after-->
+                                    <input
+                                        class="spec-menu__input"
+                                        type="text"
+                                        placeholder="Любая"
+                                    />
+                                    <button class="spec-menu__btn"></button>
+                                    <div class="spec-menu__spec-list">
+                                        <span class="spec-list__text" onclick="spec_1 ()" id="spec1"
+                                            >Грузчик</span
+                                        >
+                                        <span class="spec-list__text" onclick="spec_2 ()" id="spec2"
+                                            >РТЗ</span
+                                        >
+                                        <span class="spec-list__text" onclick="spec_3 ()" id="spec3"
+                                            >Уборщик</span
+                                        >
+                                        <span class="spec-list__text" onclick="spec_4 ()" id="spec4"
+                                            >Фасовщик</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="filter-reset" onclick="resetFilter ()">
+                                <span class="filter-reset__text"
+                                    >Сбросить фильтры</span
+                                >
+                                <img
+                                    class="filter-reset__icon"
+                                    src="../img/main-search/cross.svg"
+                                    alt="cross"
+                                />
+                            </button>
+                            <!-- <input type="reset" placeholder="test reset"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <!-- @@include('./html/_footer.html') -->
+    </body>
+
+    <script src="./js/scripts.min.js"></script>
+</html>

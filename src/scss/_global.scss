@@ -60,3 +60,21 @@ body {
     }
 }
 
+.mainPage__title {
+    display: inline-block;
+    color: var(--Primary-01);
+
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.title__btns {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}

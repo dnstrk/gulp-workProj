@@ -10,18 +10,135 @@
 
     <body class="main__body">
         <!-- Header -->
-        @@include('./html/_header.html')
+        <header class="header">
+    <!-- Navbar -->
+    <nav class="side-nav">
+        <div class="side-nav__profile">
+            <div class="profile__avatar">
+                <img
+                    class="avatar__img"
+                    src="../img/header/profile/profile_icon.png"
+                    alt="profile_icon"
+                />
+            </div>
+            <span class="profile__name">Профиль</span>
+        </div>
+        <div class="side-nav__main-menu side-nav__menu">
+            <span class="main-menu__title menu__title">Мой кабинет</span>
+            <a class="main-menu__link item__link" href="index.html">
+                <img
+                    class="link__img"
+                    src="../img/header/main-menu/Home.svg"
+                    alt="Home"
+                />
+                <span class="link__text">Главная</span>
+            </a>
+
+            <a class="main-menu__link item__link" href="searchPageAll.html">
+                <img
+                    class="link__img"
+                    src="../img/header/main-menu/Search.svg"
+                    alt="Search"
+                />
+                <span class="link__text">Записаться</span>
+            </a>
+
+            <a class="main-menu__link item__link" href="casePageFuture.html">
+                <img
+                    class="link__img"
+                    src="../img/header/main-menu/Case.svg"
+                    alt="Case"
+                />
+                <span class="link__text">Заказы</span>
+            </a>
+
+            <a class="main-menu__link item__link" href="Wallet.html">
+                <img
+                    class="link__img"
+                    src="../img/header/main-menu/Wallet.svg"
+                    alt="Wallet"
+                />
+                <span class="link__text">Кошелёк</span>
+            </a>
+
+            <a class="main-menu__link item__link" href="Chat.html">
+                <img
+                    class="link__img"
+                    src="../img/header/main-menu/Chat.svg"
+                    alt="Chat"
+                />
+                <span class="link__text">Поддержка</span>
+            </a>
+        </div>
+        <div class="side-nav__sub-menu side-nav__menu">
+            <span class="sub-menu__title menu__title">Дополнительно</span>
+            <ul class="sub-menu__list menu__list">
+                <li class="sub-menu__item list__item">
+                    <a class="sub-menu__link item__link" href="#">
+                        <img
+                            class="link__img"
+                            src="../img/header/sub-menu/Badge.svg"
+                            alt="Badge"
+                        />
+                        <span class="link__text">Бейдж</span>
+                    </a>
+                </li>
+                <li class="sub-menu__item list__item">
+                    <a class="sub-menu__link item__link" href="#">
+                        <img
+                            class="link__img"
+                            src="../img/header/sub-menu/Docs.svg"
+                            alt="Docs"
+                        />
+                        <span class="link__text">Документы</span>
+                    </a>
+                </li>
+                <li class="sub-menu__item list__item">
+                    <a class="sub-menu__link item__link" href="#">
+                        <img
+                            class="link__img"
+                            src="../img/header/sub-menu/News.svg"
+                            alt="News"
+                        />
+                        <span class="link__text">Новости</span>
+                    </a>
+                </li>
+                <li class="sub-menu__item list__item">
+                    <a class="sub-menu__link item__link" href="#">
+                        <img
+                            class="link__img"
+                            src="../img/header/sub-menu/Contact.svg"
+                            alt="Contact"
+                        />
+                        <span class="link__text">Контакты</span>
+                    </a>
+                </li>
+                <li class="sub-menu__item list__item">
+                    <a class="sub-menu__link item__link" href="#">
+                        <img
+                            class="link__img"
+                            src="../img/header/sub-menu/Help.svg"
+                            alt="Help"
+                        />
+                        <span class="link__text">Помощь</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
 
         <!-- Main Page -->
         <main>
             <div class="main" onclick="handlerFields ()">
                 <div class="main-search-wrap container">
                     <div class="main-search-wrap__title">
-                        <h3 class="main-search-wrap__title-text">Записаться</h3>
+                        <h3 class="main-search-wrap__title-text mainPage__title">Записаться</h3>
                     </div>
                     <div class="main-search-wrap__tabs">
-                        <button class="tabs__orders-btn">Все заказы</button>
-                        <button class="tabs__education-btn">Обучение</button>
+                        <a class="tabs__orders-btn active title__btns" href="searchPageAll.html">Все заказы</a>
+                        <a class="tabs__education-btn title__btns" href="searchPageLearn.html">Обучение</a>
                     </div>
                     <div class="main-search-wrap__searchbar">
                         <input
@@ -409,7 +526,7 @@
         </main>
 
         <!-- Footer -->
-        <!-- @@include('./html/_footer.html') -->
+        
     </body>
 
     <script src="./js/scripts.min.js"></script>
